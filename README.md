@@ -55,10 +55,15 @@ Par exemple :
     @xset -dpms
 ```
 
-## TODO
- - Separated thread for generating thumbnails
- - Slideshow slide time parameter
- - Hide Quit button when Kiosk mode
- - Parameters for number of boxes
- - Multipage
+## Task list
+ 
+ - [x] Labels under boxes
+ - [x] Optimization : generating thumbnails
+ - [x] Slideshow
+ - [ ] Debug mode is an option
+ - [ ] Separated thread for generating thumbnails
+ - [ ] Slideshow slide time parameter
+ - [ ] Hide Quit button when Kiosk mode
+ - [ ] Parameters for number of boxes
+ - [ ] Multipage
  
