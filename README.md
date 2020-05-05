@@ -10,7 +10,7 @@ SideScreen 2 allows you to use a touchscreen display as a Kneeboard.
 
 You can use any computer running .NET Framework, even with Mono (includes Raspberry Pi, from version 1).
 
-https://youtu.be/2VlUsvCgALI[](https://youtu.be/2VlUsvCgALI)
+https://youtu.be/2VlUsvCgALI
 
 
 ## Where do I put pictures ?
