@@ -35,7 +35,6 @@ Dans `/.config/lxsession/LXDE-pi/autostart` remplacez
 ```
     @lxpanel --profile LXDE
     @pcmanfm --desktop --profile LXDE
-    @xscreensaver -no-splash
 ```
 
 par
@@ -48,10 +47,18 @@ Par exemple :
 ```
     #@lxpanel --profile LXDE-pi
     #@pcmanfm --desktop --profile LXDE-pi
-    #@xscreensaver -no-splash
+    @xscreensaver -no-splash
     @/usr/lib/vino/vino-server
     mono /home/pi/SideScreen2/SideScreen2.exe
     @xset s noblank
     @xset s off
     @xset -dpms
 ```
+
+## TODO
+ - Separated thread for generating thumbnails
+ - Slideshow slide time parameter
+ - Hide Quit button when Kiosk mode
+ - Parameters for number of boxes
+ - Multipage
+ 
