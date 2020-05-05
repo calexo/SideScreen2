@@ -23,6 +23,14 @@ data  SideScreen2.exe  SideScreen2.exe.config  SideScreen2.pdb
 
 ## How can I use it on Raspberry Pi
 
+### Hardware
+
+You need :
+ - A Raspberry Pi, with its SD card and its power supply
+   - In the video, it is an old Raspberry Pi 1 B !
+ - A compatible touchscreen
+   - In the video, you can see the [official 7" touchscreen](https://www.kubii.fr/ecrans-afficheurs/1131-ecran-tactile-officiel-7-800x480-kubii-640522710829.html).
+
 ### On Raspbian
 
 #### Install Mono
