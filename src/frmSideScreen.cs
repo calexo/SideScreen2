@@ -18,7 +18,7 @@ namespace SideScreen2
 
         string baseFolder = Path.Combine(Application.StartupPath, "data");
         string currentFolder = "";
-        string currentFullFolder, currentFullFile;
+        string currentFullFolder, currentFullImageFile, currentFullURLFile;
         int lastPctClicked;
 
         int iThumbSizeWidth, iThumbSizeHeight;
@@ -64,13 +64,14 @@ namespace SideScreen2
         private void loadMenu()
         {
             currentFullFolder = Path.Combine(baseFolder, currentFolder);
-            currentFullFile = Path.Combine(baseFolder, currentFolder + ".jpg");
+            currentFullImageFile = Path.Combine(baseFolder, currentFolder + ".jpg");
+            currentFullURLFile = Path.Combine(baseFolder, currentFolder + ".url");
 
             btnUp.Enabled = (currentFolder != "");
 
             try
             {
-
+                // DOSSIER
                 if (Directory.Exists(currentFullFolder))
                 {
 
@@ -107,7 +108,25 @@ namespace SideScreen2
                         }
                         // this.pictureBoxes[i].Tag = Path.GetFileName(pFiles[i]);
                     }
-                } else if (File.Exists(currentFullFile))
+                }
+                // URL
+                else if (File.Exists(currentFullURLFile))
+                {
+                    frmWeb frm = new frmWeb();
+                    //frm.pictureBox1.Image = Image.FromFile(currentFullFile);
+
+                    currentFolder = Path.GetDirectoryName(currentFolder);
+
+                    string url = File.ReadLines(currentFullURLFile).FirstOrDefault();
+
+                    frm.giveInfos(url);
+
+                    frm.Show();
+
+
+                }
+                // IMAGE
+                else if (File.Exists(currentFullImageFile))
                 {
                     frmFull frm = new frmFull();
                     //frm.pictureBox1.Image = Image.FromFile(currentFullFile);
@@ -126,8 +145,9 @@ namespace SideScreen2
 
                     frm.Show();
 
-                    
-                } else
+
+                }
+                else
                 {
                     currentFolder = "";
                     loadMenu();

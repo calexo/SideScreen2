@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -53,11 +54,9 @@ namespace SideScreen2
             btnExit.Height = iToolbarHeight;
         }
 
-        public void giveInfos(int current, string[] psachemins, bool slideshow = false)
+        public void giveInfos(string url)
         {
-            this.i = current;
-            this.saChemins = psachemins;
-            this.slideStarted = slideshow;
+            this.webBrowser1.Url = new Uri (url);
 
         }
 
