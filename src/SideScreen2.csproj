@@ -58,6 +58,12 @@
     <Compile Include="frmSideScreen.Designer.cs">
       <DependentUpon>frmSideScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmWeb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWeb.designer.cs">
+      <DependentUpon>frmWeb.cs</DependentUpon>
+    </Compile>
     <Compile Include="ImageHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -66,6 +72,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSideScreen.resx">
       <DependentUpon>frmSideScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWeb.resx">
+      <DependentUpon>frmWeb.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -113,6 +122,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-exit-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-refresh-150.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

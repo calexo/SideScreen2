@@ -295,6 +295,11 @@ namespace SideScreen2
             frm.Show();
         }
 
+        private void lblStatus_Click(object sender, EventArgs e)
+        {
+            Form frm = new frmWeb();
+            frm.Show();
+        }
 
         private void btnHome_Click(object sender, EventArgs e)
         {

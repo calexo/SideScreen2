@@ -123,6 +123,16 @@ namespace SideScreen2.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_refresh_150 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-refresh-150", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_up_80 {
             get {
                 object obj = ResourceManager.GetObject("icons8-up-80", resourceCulture);
