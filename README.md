@@ -68,7 +68,7 @@ Par exemple :
  - [x] Labels under boxes
  - [x] Optimization : generating thumbnails
  - [x] Slideshow
- - [ ] Web browser
+ - [x] Web browser
  - [ ] Debug mode is an option
  - [ ] Separated thread for generating thumbnails
  - [ ] Slideshow slide time parameter
